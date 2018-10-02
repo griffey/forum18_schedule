@@ -86,6 +86,15 @@
       .schedule-block > .row:last-child {
         border-bottom: 1px solid #ccc;
       }
+      
+      /* Prevent links in schedule from looking grody due to color interactions with rainbow background.
+         Must use !important to override an !important in the tyler stylesheet, don't @ me. */
+      .schedule-block strong a {
+        color: #555 !important;
+      }
+      .schedule-block strong a:hover {
+        color: #686868 !important;
+      }
 
       .legend {
         font-weight: bold;
@@ -240,7 +249,7 @@
               <li id="menu-item-1332" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-1332"><a href="https://forum.lita.org/attending/">Attending</a>
                 <ul class="sub-menu">
                 	<li id="menu-item-2471" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-272 current_page_item menu-item-2471"><a href="https://thatandromeda.github.io/forum18_schedule/">Schedule</a></li>
-                </ul>
+                  <li id="menu-item-2529" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2529"><a href="https://forum.lita.org/attending/social-and-networking-activities/">Social and Networking Activities</a></li>                </ul>
               </li>
               <li id="menu-item-1309" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1309"><a href="https://forum.lita.org/registrationtravel/">Registration/Travel</a>
                 <ul class="sub-menu">
@@ -371,6 +380,9 @@
             </div>
           </div>
         </div>
+
+        <h3>After hours</h3>
+        <p>Please enjoy Forum's <a href="https://forum.lita.org/attending/social-and-networking-activities/">social and networking activities</a>.
       </div>
 
       <h2>
@@ -391,7 +403,7 @@
             <div class="schedule-keynote col-xs-10 col-sm-9">
               <ul class="list-unstyled">
                 <li>
-                  <strong>Nancy Sims</strong>, University of Minnesota
+                  <strong><a href="http://forum.lita.org/speakers/nancy-sims-2/">Nancy Sims</a></strong>, University of Minnesota
                 </li>
               </ul>
               <i>Title and description forthcoming</i>
@@ -427,10 +439,10 @@
               </p>
               <ul class="list-unstyled">
                 <li>
-                  <strong>Margaret Alexander</strong>, Eugene Public Library
+                  <strong><a href="http://forum.lita.org/speakers/margaret-alexander/">Margaret Alexander</a></strong>, Eugene Public Library
                 </li>
                 <li>
-                  <strong>Craig Wiroll</strong>, Mozilla Gigabit Foundation
+                  <strong><a href="http://forum.lita.org/speakers/craig-wiroll/">Craig Wiroll</a></strong>, Mozilla Gigabit Foundation
                 </li>
               </ul>
               <div class="collapse" id="nov9-block1-gigabit">
@@ -1529,7 +1541,7 @@
         </div>
 
         <h3>After hours</h3>
-        <p>Dine-arounds and other events TBA.</p>
+        <p>Please enjoy Forum's <a href="https://forum.lita.org/attending/social-and-networking-activities/">social and networking activities</a>.
       </div>
 
       <h2>
@@ -1697,7 +1709,7 @@
                   </p>
                   <ul class="list-unstyled">
                     <li>
-                      <strong>Nancy Sims</strong>, University of Minnesota
+                      <strong><a href="http://forum.lita.org/speakers/nancy-sims-2/">Nancy Sims</a></strong>, University of Minnesota
                     </li>
                     <li>
                       <strong>Jason Roy</strong>, University of Minnesota
@@ -1776,9 +1788,22 @@
               <i class="fas fa-key"></i> <span class="hidden-xs">Keynote/Streaming Room</span>
             </div>
             <div class="schedule-keynote col-xs-10 col-sm-9">
-              <p class="lead">Spaces, Cases, and Faces: Libraries as Emerging Technologies Hubs</p>
+              <p class="lead">
+                Spaces, Cases, and Faces: Libraries as Emerging Technologies Hubs
+                <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov10-block2-hubs" aria-expanded="false" aria-controls="nov10-block2-hubs">
+                  <i class="fas fa-angle-double-down"></i>
+                  <i class="fas fa-angle-double-up"></i>
+                </a>
+              </p>
+              <ul class="list-unstyled">
+                <li><strong>Bobby Reed</strong>, University of Oklahoma</li>
+                <li><strong>Matt Cook</strong>, University of Oklahoma</li>
+                <li><strong>Ashley West</strong>, University of Oklahoma</li>
+                <li><strong>Kristi Wyatt</strong>, University of Oklahoma</li>
+              </ul>
               <div class="collapse" id="nov10-block2-hubs">
                 <div class="well">
+                  After researching emerging technologies professional positions, it became clear that it is not a widespread position. Evidence was found for ~60 positions across the US. The interesting aspect of this fact is that organizations that have implemented an Emerging Techonologies position typically become champions of the position and expand it into a team/department. Highlighted will be the way we these teams create value for libraries and their plans to expand that value in the future. Our hope is that this will serve as an inspiration to other libraries to build ET teams and become the go to tech resource for their patrons.
                 </div>
               </div>
             </div>
@@ -2104,7 +2129,7 @@
                   11:130 &ndash; 11:50
                 </div>
                 <div class="col-xs-12 col-sm-9 col-sm-pull-3 col-md-10 col-md-pull-2">
-                  <p class="lead">Innovation on a Shoestring: Free &amp; Cheap Tools</p>
+                  &nbsp;
                 </div>
                 <div class="col-xs-12 col-sm-3 col-sm-push-9 col-md-2 col-md-push-10">
                   11:50 &ndash; 12:00
@@ -2377,7 +2402,7 @@
             <div class="schedule-keynote col-xs-10 col-sm-9">
               <p class="lead">
                 HPL FindIt:  Smart maps come to the library!
-                <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov10-block4-maps" aria-expanded="false" aria-controls="nov10-block4-maps">
+                <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov10-block5-maps" aria-expanded="false" aria-controls="nov10-block5-maps">
                   <i class="fas fa-angle-double-down"></i>
                   <i class="fas fa-angle-double-up"></i>
                 </a>
@@ -2403,9 +2428,21 @@
               <i class="fas fa-chalkboard-teacher"></i> <span class="hidden-xs">Special Lecture Room</span>
             </div>
             <div class="schedule-lecture col-xs-10 col-sm-9">
-              <p class="lead">Curated Metadata and Digital Humanities: Using JSON Exports to Reimagine Data Access for Online Catalogs in vHMML</p>
+              <p class="lead">
+                Curated Metadata and Digital Humanities: Using JSON Exports to Reimagine Data Access for Online Catalogs in vHMML
+                <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov10-block5-dh" aria-expanded="false" aria-controls="nov10-block5-dh">
+                  <i class="fas fa-angle-double-down"></i>
+                  <i class="fas fa-angle-double-up"></i>
+                </a>
+              </p>
+              <ul class="list-unstyled">
+                <li><strong>Daniel Gullo</strong>, Hill Museum &amp; Manuscript Library</li>
+                <li><strong>John Meyerhofer</strong>, Hill Museum &amp; Manuscript Library</li>
+                <li><strong>Bryan Lor</strong>, Solutions Design Group</li>
+              </ul>
               <div class="collapse" id="nov10-block5-dh">
                 <div class="well">
+                  The Hill Museum &amp; Manuscript Library has developed a new method that allows scholars to easily curate metadata from HMML's online catalog, vHMML Reading Room. Selected metadata can be exported as JSON for scholars to use in a variety of formats suitable for building unique digital humanities projects based on metadata needs. The presentation will discuss and demonstrate the implementation of vHMML's Data Portal, the underlying technical aspects of harvesting and exporting the metadata from the database, and how the data portal reimagines the online catalog as a research technology for scholars.
                 </div>
               </div>
             </div>
@@ -2423,7 +2460,7 @@
                 <div class="col-xs-12 col-sm-9 col-sm-pull-3 col-md-10 col-md-pull-2">
                   <p class="lead">
                     The Cat Herder: Maintaining Standards for Research Guides Without Making People Hate You
-                    <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov10-block4-cats" aria-expanded="false" aria-controls="nov10-block4-cats">
+                    <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov10-block5-cats" aria-expanded="false" aria-controls="nov10-block5-cats">
                       <i class="fas fa-angle-double-down"></i>
                       <i class="fas fa-angle-double-up"></i>
                     </a>
@@ -2459,7 +2496,22 @@
                   1:40 &ndash; 2:00
                 </div>
                 <div class="col-xs-12 col-sm-9 col-sm-pull-3 col-md-10 col-md-pull-2">
-                  <p class="lead">Library as Innovative Technology Center</p>
+                  <p class="lead">Library as Innovative Technology Center
+                    <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov10-block5-center" aria-expanded="false" aria-controls="nov10-block5-center">
+                      <i class="fas fa-angle-double-down"></i>
+                      <i class="fas fa-angle-double-up"></i>
+                    </a>
+                  </p>
+                  <ul class="list-unstyled">
+                    <li>
+                      <strong>Scott Russell</strong>, Western Michigan University
+                    </li>
+                  </ul>
+                  <div class="collapse" id="nov10-block5-center">
+                    <div class="well">
+                      We are reimagining the library as a destination for innovative technology.  Students already use the library's public computing and public printing resources; we are now engaging them with newer and more specialized technology.  We opened a Virtual Reality Lab in January 2018 and we will be opening a Makerspace and Graduate Student Commons by Fall 2018.  In its first semester of operation, the VR Lab saw 1,185 patron sessions plus 13 workshops on VR content creation with 44 attendees. We are also in the planning stages of offering multimedia editing suites, a one-button recording studio, and Learning Glass.
+                    </div>
+                  </div>
                 </div>
                 <div class="col-xs-12 col-sm-3 col-sm-push-9 col-md-2 col-md-push-10">
                   2:00 &ndash; 2:20
@@ -2478,7 +2530,7 @@
             <div class="schedule-handson1 col-xs-10 col-sm-9">
               <p class="lead">
                 Go With the Flow: NiFi for Automation and Data Processing
-                <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov10-block4-nifi" aria-expanded="false" aria-controls="nov10-block4-nifi">
+                <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov10-block5-nifi" aria-expanded="false" aria-controls="nov10-block5-nifi">
                   <i class="fas fa-angle-double-down"></i>
                   <i class="fas fa-angle-double-up"></i>
                 </a>
@@ -2503,7 +2555,7 @@
             <div class="schedule-handson2 col-xs-10 col-sm-9">
               <p class="lead">
                 Building websites and leading librarians to a new level of project engagement
-                <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov10-block4-engagement" aria-expanded="false" aria-controls="nov10-block4-engagement">
+                <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov10-block5-engagement" aria-expanded="false" aria-controls="nov10-block5-engagement">
                   <i class="fas fa-angle-double-down"></i>
                   <i class="fas fa-angle-double-up"></i>
                 </a>
@@ -2609,59 +2661,88 @@
       // I am full of shame about this JavaScript, I did not have time to make
       // it nicer, pull requests welcome
       var keynote = $('.legend-keynote').parent('.row');
-      var lecture = $('.legend-lecture').parent('.row');;
-      var discussion = $('.legend-discussion').parent('.row');;
-      var problems = $('.legend-problems').parent('.row');;
-      var handson1 = $('.legend-handson1').parent('.row');;
-      var handson2 = $('.legend-handson2').parent('.row');;
+      var lecture = $('.legend-lecture').parent('.row');
+      var discussion = $('.legend-discussion').parent('.row');
+      var problems = $('.legend-problems').parent('.row');
+      var handson1 = $('.legend-handson1').parent('.row');
+      var handson2 = $('.legend-handson2').parent('.row');
 
-      $('.legend-keynote').click(function() {
+      var options = {'keynote': toggle_keynote,
+                     'lecture': toggle_lecture,
+                     'discussion': toggle_discussion,
+                     'problems': toggle_problems,
+                     'handson1': toggle_handson1,
+                     'handson2': toggle_handson2
+                    }
+
+      function toggle_keynote() {
         lecture.toggle()
         discussion.toggle()
         problems.toggle()
         handson1.toggle()
-        handson2.toggle()
-      });
+        handson2.toggle()        
+      }
 
-      $('.legend-lecture').click(function() {
+      function toggle_lecture() {
         keynote.toggle()
         discussion.toggle()
         problems.toggle()
         handson1.toggle()
         handson2.toggle()
-      });
+      }
 
-      $('.legend-discussion').click(function() {
+      function toggle_discussion() {
         keynote.toggle()
         lecture.toggle()
         problems.toggle()
         handson1.toggle()
         handson2.toggle()
-      });
+      }
 
-      $('.legend-problems').click(function() {
+      function toggle_problems() {
         keynote.toggle()
         lecture.toggle()
         discussion.toggle()
         handson1.toggle()
         handson2.toggle()
-      });
+      }
 
-      $('.legend-handson1').click(function() {
+      function toggle_handson1() {
         keynote.toggle()
         lecture.toggle()
         discussion.toggle()
         problems.toggle()
         handson2.toggle()
-      });
+      }
 
-      $('.legend-handson2').click(function() {
+      function toggle_handson2() {
         keynote.toggle()
         lecture.toggle()
         discussion.toggle()
         problems.toggle()
         handson1.toggle()
-      });
+      }
+
+      $('.legend-keynote').click(toggle_keynote);
+
+      $('.legend-lecture').click(toggle_lecture);
+
+      $('.legend-discussion').click(toggle_discussion);
+
+      $('.legend-problems').click(toggle_problems);
+
+      $('.legend-handson1').click(toggle_handson1);
+
+      $('.legend-handson2').click(toggle_handson2);
+
+      $(document).ready(function() {
+        var results = new RegExp('[\?&]only=([^&#]*)').exec(window.location.href);
+        var only = results[1] || 0;
+        var func = options[only];
+        if (func) {
+          func();
+        }
+      })
     </script>
   </body>
 </html>
